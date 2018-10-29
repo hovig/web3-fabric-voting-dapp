@@ -1,4 +1,4 @@
-## Blockchain DApp - {Web3, Ethereum, Solidity, Hyperledger Fabric, Hyperledger Chaincode EVM}
+## Blockchain DApp - {Web3, Ethereum, Solidity, Hyperledger Fabric, Chaincode EVM}
 Simple Web3 Hyperledger Fabric - Hyperledger [Burrow EVM](https://github.com/hyperledger/burrow) Voting Decentralized Application
 
 With few clicks, run smart contracts from Solidity onto Ethereum Virtual Machine (EVM) that is embedded into Hyperledger Fabric to compiles these contracts as bytecode, of course, with the help of the chaincode.
@@ -34,7 +34,7 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 <hr>
 
-* <u>Read the full tutorial on how to build this application:</u>
+* __Read the full tutorial on how to build this application:__
 
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
@@ -63,7 +63,7 @@ Note: Take into consideration that running `./start/sh` will remove existing doc
 2) go build -o fab3 ./fabproxy/cmd  
 3) ./fab3
 ```
-The fabproxy will running at localhost:5000
+The fabproxy will running at `localhost:5000`
 
 * Run the web app locally:
 
@@ -72,7 +72,7 @@ The fabproxy will running at localhost:5000
 2) npm start
 ```
 
-Open your browser at: [localhost:3000](localhost:3000)
+Open your browser at: [localhost:3000](http://localhost:3000)
 
 <hr>
 
