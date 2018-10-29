@@ -34,7 +34,7 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 <hr>
 
-* __Read the full tutorial on how to build this application:__
+__Read the full tutorial on how to build this application:__
 
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
@@ -58,14 +58,14 @@ peer chaincode instantiate -n evmcc -v 0 -C mychannel -c '{"Args":[]}' -o ordere
 Note: Take into consideration that running `./start/sh` will remove existing docker containers and images
 
 ```bash
-# COPY/PASTE THIS SECTION IN THE NEW TERMINAL
+# COPY/PASTE THE FOLLOWINGS IN A NEW TERMINAL
 1) cd <YOUR_HOME_PATH_TO>/go/src/github.com/hyperledger/fabric-chaincode-evm  
 2) go build -o fab3 ./fabproxy/cmd  
 3) ./fab3
 ```
 The fabproxy will running at `localhost:5000`
 
-* Run the web app locally:
+* Go to the project's path and run the web app locally:
 
 ```javascript
 1) npm install
