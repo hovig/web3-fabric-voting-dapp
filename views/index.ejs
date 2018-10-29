@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting Dapp</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <fieldset>
+      <form action="/" method="post">
+        <input name="name" type="text" class="ghost-input" placeholder="Would you use Blockchain? Yes, No or Maybe" required>
+        <input type="submit" class="ghost-button" value="Vote">
+      </form><% if(poll !== null){ %>
+        <p><center>Polls - Voting DApp using Hyperledger Fabric, Web3 & Solidity</center><br><u>Total Votes:</u><br>
+        <%- poll %></p><% } %>
+      <% if(error !== null){ %>
+        <p><%= error %></p><% } %>
+    </fieldset>
+  </div>
+</body>
+</html>

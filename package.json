@@ -1,0 +1,27 @@
+{
+  "name": "web3-fabric-voting-dapp",
+  "version": "1.0.0",
+  "description": "Voting DApp using Web3, Solidity & Hyperledger Fabric Chaincode EVM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "web3": "npm install web3@0.20.2"
+  },
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/hovig/web3-fabric-voting-dapp/issues"
+  },
+  "homepage": "https://github.com/hovig/web3-fabric-voting-dapp",
+  "author": "hovig ohannessian",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ethereumjs-testrpc": "^3.0.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "ganache-cli": "^6.1.8",
+    "solc": "0.4.25",
+    "web3": "^0.20.0",
+    "ejs": "^2.6.1"
+  }
+}

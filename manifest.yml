@@ -1,0 +1,4 @@
+applications:
+- name: web3-voting-dapp
+  memory: 128M
+  buildpack: sdk-for-nodejs
