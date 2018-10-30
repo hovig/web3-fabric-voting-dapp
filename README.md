@@ -67,7 +67,7 @@ peer chaincode instantiate -n evmcc -v 0 -C mychannel -c '{"Args":[]}' -o ordere
 2) npm start
 ```
 
-Open your browser at `[localhost:3000](http://localhost:3000)` to view the app.
+Open your browser at [localhost:3000](http://localhost:3000) to view the app.
 
 <hr>
 
