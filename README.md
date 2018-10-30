@@ -89,9 +89,9 @@ Open your browser at [localhost:3000](http://localhost:3000) to view the app.
 
 ## References
 
-* [Fabric](https://github.com/hyperledger/fabric-samples)
+* [Hyperledger Fabric](https://github.com/hyperledger/fabric-samples)
 * [Hyperledger Fabric Chaincode EVM](https://github.com/hyperledger/fabric-chaincode-evm)
-* [Solifity](https://solidity.readthedocs.io/en/v0.4.25/index.html)
+* [Solidity](https://solidity.readthedocs.io/en/v0.4.25/index.html)
 * [Web3](https://web3js.readthedocs.io/en/1.0/)
 * [Ethereum JSON RPC API](https://github.com/ethereum/wiki/wiki/JSON-RPC)
 
