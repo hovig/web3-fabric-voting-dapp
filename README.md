@@ -36,7 +36,7 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 __Read the full tutorial on how to build this application:__
 
-<u>Note:</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker stop, rm and rmi in start.sh
+<u>_Note:_</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker `stop`, `rm` and `rmi` in `start.sh`
 
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
@@ -57,9 +57,7 @@ peer chaincode install -n evmcc -l golang -v 0 -p github.com/hyperledger/fabric-
 peer chaincode instantiate -n evmcc -v 0 -C mychannel -c '{"Args":[]}' -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 
 ```
-* <b>STEP 3 - `./proxy.sh` - run this script file in a _new_ terminal</b>
-
-The fab proxy will be available at `localhost:5000`
+* <b>STEP 3 - `./proxy.sh` - run this script file in a <u>_new_ terminal</u></b>. The fab proxy will be available at `localhost:5000`.
 
 
 * In a different terminal, go back to the project's folder and run the web app locally by doing:
@@ -69,7 +67,7 @@ The fab proxy will be available at `localhost:5000`
 2) npm start
 ```
 
-Open your browser at: [localhost:3000](http://localhost:3000)
+Open your browser at `[localhost:3000](http://localhost:3000)` to view the app.
 
 <hr>
 
