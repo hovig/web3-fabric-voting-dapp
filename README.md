@@ -36,36 +36,33 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 __Read the full tutorial on how to build this application:__
 
+<u>Note:</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker stop, rm and rmi in start.sh
+
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
-* <b>STEP 2 - copy/paste the following by sections in the same terminal:</b>
+* <b>STEP 2 - copy/paste the following sections in the same terminal:</b>
 
 ```bash
-1) # COPY/PASTE SECTION 1 IN THE TERMINAL
+1) # COPY/PASTE THIS SECTION IN THE TERMINAL
+
 export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
 export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
 export CORE_PEER_LOCALMSPID="Org1MSP"
 export CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
 
-2) # COPY/PASTE SECTION 2 IN THE TERMINAL
+
+2) # COPY/PASTE THIS SECTION IN THE TERMINAL
+
 peer chaincode install -n evmcc -l golang -v 0 -p github.com/hyperledger/fabric-chaincode-evm/evmcc
 peer chaincode instantiate -n evmcc -v 0 -C mychannel -c '{"Args":[]}' -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+
 ```
-* <b>STEP 3 - copy/paste the already cloned fabric-chaincode-evm in a _new_ terminal:</b>
+* <b>STEP 3 - `./proxy.sh` - run this script file in a _new_ terminal</b>
 
-> To help you find your <YOUR_HOME_PATH_TO> run: `./pathfinder.sh` and copy/paste the result below
+The fab proxy will be available at `localhost:5000`
 
-Note: Take into consideration that running `./start/sh` will remove existing docker containers and images
 
-```bash
-# COPY/PASTE THE FOLLOWINGS IN A NEW TERMINAL
-1) cd <YOUR_HOME_PATH_TO>/go/src/github.com/hyperledger/fabric-chaincode-evm  
-2) go build -o fab3 ./fabproxy/cmd  
-3) ./fab3
-```
-The fabproxy will running at `localhost:5000`
-
-* Go to the project's path and run the web app locally:
+* In a different terminal, go back to the project's folder and run the web app locally by doing:
 
 ```javascript
 1) npm install

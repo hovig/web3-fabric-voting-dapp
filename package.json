@@ -1,6 +1,6 @@
 {
   "name": "web3-fabric-voting-dapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Voting DApp using Web3, Solidity & Hyperledger Fabric Chaincode EVM",
   "main": "index.js",
   "scripts": {
