@@ -43,7 +43,7 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 ## STEPS
 
-![](img/steps.png)
+![](img/hyperether-steps.png)
 
 <hr>
 
