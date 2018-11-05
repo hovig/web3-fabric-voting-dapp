@@ -5,7 +5,7 @@ With few clicks, run smart contracts from Solidity onto Ethereum Virtual Machine
 
 <hr>
 
-![](img/architecture.png)
+![](img/hyperether.png)
 
 <hr>
 
