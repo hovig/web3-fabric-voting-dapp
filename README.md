@@ -49,7 +49,7 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 __Read the full tutorial on how to build this application:__
 
-<u>_Note:_</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker `stop`, `rm` and `rmi` in `start.sh`
+<u>_Note:_</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker `stop`, `rm` and `rmi` in `start.sh`. The script is removing and adding docker compose yaml file that creates volume for fabric-chaincode-evm, adding needed repos for this project and chmod is to access/enable a file in the cloned repos to be executed.
 
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
