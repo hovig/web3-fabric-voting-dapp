@@ -3,7 +3,6 @@ author - Hovig Ohannessian
 **/
 const express = require('express');
 const bodyParser = require('body-parser');
-const request = require('request');
 const app = express()
 const fs = require('fs');
 const solc = require('solc');
