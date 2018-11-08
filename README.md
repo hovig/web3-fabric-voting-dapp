@@ -9,16 +9,15 @@ With few clicks, run smart contracts from Solidity onto Ethereum Virtual Machine
 
 <hr>
 
-Experience Ethereum into the world of permissioned platform of Hyperledger Fabric. This interaction is done through Hyperledger Chaincode EVM hosting Fabric Network to be compatible in compiling Ethereum smart contracts.
+Experience Ethereum into the world of permissioned platform of Hyperledger Fabric. This interaction is done through Hyperledger Chaincode EVM hosting Fabric Network.
 
 Let's consider the followings:
 1. Hyperledger Chaincode EVM<br>
-   1.1. Uses the Fabric Go SDK to plug and interact with the Fabric Network<br>
-   1.2. Chaincode written in Go and made compatible for Ethereum smart contracts deployments and compilations<br>
-   1.3. Build, start Fab3 proxy and make it available on port 5000<br>
-2. Fabric Network<br>
-   2.1. This is the replacement for Ethereum JSON RPC<br>
-   2.2. Deals in different methods between: channel, peer and EVM <br>
+   1.1. Chaincode is written in Go and is a wrapper around the Hyperledger Burrow EVM implementation which can run compiled Solidity smart contracts<br>
+2. Fab3<br>
+   2.1. This is partial implementation of the Ethereum JSON RPC API<br>
+   2.2. Fab3 interacts with the EVM Chaincode and queries the ledger<br>
+   2.3. Uses the Fabric Go SDK to implement Fab3<br>
 3. Voting DApp<br>
    3.1. Node.js based, written in Javascript <br>
    3.2. Uses Web3 library to process smart contracts' deployments<br>
@@ -26,7 +25,7 @@ Let's consider the followings:
    3.4. Placeholder of all interactions<br>
 
 What you will learn:<br>
-        .	Setup/install a decentralized app with: Fabric, Chaincode EVM and Ethereum<br>
+  .	Setup/install a decentralized app with: Fabric, Chaincode EVM and Fab3<br>
 	.	Writing, deploying and compiling Solidity smart contracts<br>
 	.	Vote and display the polls on a simple web page
 
