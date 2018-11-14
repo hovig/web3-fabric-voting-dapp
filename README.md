@@ -36,7 +36,7 @@ What you will learn:<br>
 <hr>
 
 ## Before we start
-Make sure to have the following prerequisite tools are installed on your machine: [NPM](https://www.npmjs.com/), [Node](https://nodejs.org/en/), [Go](https://golang.org/dl/), [Docker](https://www.docker.com/)
+Make sure to have the following prerequisite tools are installed on your machine: [NPM](https://www.npmjs.com/), [Node](https://nodejs.org/en/), [Go](https://golang.org/dl/), [Docker](https://www.docker.com/). Their versions used for this code (respectively): `v6.4.1`, `v10.10.0`, `v1.9.3 darwin/amd64`, `v18.06.1-ce`.
 
 These scripts in this project have been tried and are macOS compatible but if there are machine issues, then follow the steps [here](https://github.com/hyperledger/fabric-chaincode-evm/blob/master/examples/EVM_Smart_Contracts.md) to bring up the needed containers, peers and fab3 proxy up and running.
 
