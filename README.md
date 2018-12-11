@@ -40,7 +40,7 @@ Make sure to have the following prerequisite tools are installed on your machine
 
 These scripts in this project have been tried and are macOS compatible but if there are machine issues, then follow the steps [here](https://github.com/hyperledger/fabric-chaincode-evm/blob/master/examples/EVM_Smart_Contracts.md) to bring up the needed containers, peers and fab3 proxy up and running.
 
-## STEPS
+## STEPS (__OR__ for `manual steps` - click [here](manual_steps.md))
 
 ![](img/hyperether-steps.png)
 
